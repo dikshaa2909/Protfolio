@@ -149,7 +149,7 @@ function App() {
                 </svg>
               </a>
               <a href="#contact" className="btn-secondary">Let's Talk</a>
-              <a href="/Diksha Resume.pdf" target="_blank" rel="noreferrer" className="btn-resume">Resume</a>
+              <a href="/Diksha Resume.pdf?v=20260325" target="_blank" rel="noreferrer" className="btn-resume">Resume</a>
             </motion.div>
           </div>
 
@@ -396,7 +396,7 @@ function App() {
                 Twitter
               </a>
             </div>
-            <a href="/Diksha Resume.pdf" target="_blank" rel="noreferrer" className="contact-resume-btn">
+            <a href="/Diksha Resume.pdf?v=20260325" target="_blank" rel="noreferrer" className="contact-resume-btn">
               <span className="social-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
