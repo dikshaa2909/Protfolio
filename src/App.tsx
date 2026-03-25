@@ -70,7 +70,7 @@ function App() {
             transition={{ delay: 0.6, duration: 0.6 }}
           />
           <motion.div
-            className="deco-shape deco-shape-3"
+            className="circle-one"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.7, duration: 0.6 }}
@@ -200,12 +200,6 @@ function App() {
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
           />
-
-          {/* Scroll indicator */}
-          <div className="scroll-indicator">
-            <span>Scroll</span>
-            <div className="scroll-line" />
-          </div>
         </div>
       </section>
 
