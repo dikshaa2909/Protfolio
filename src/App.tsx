@@ -149,7 +149,7 @@ function App() {
                 </svg>
               </a>
               <a href="#contact" className="btn-secondary">Let's Talk</a>
-              <a href="/Diksha Resume.pdf?v=20260325" target="_blank" rel="noreferrer" className="btn-resume">Resume</a>
+              <a href="/Diksha%20Deware%20Resume.pdf" target="_blank" rel="noreferrer" className="btn-resume">Resume</a>
             </motion.div>
           </div>
 
@@ -287,6 +287,50 @@ function App() {
         </div>
       </section>
 
+      {/* EXPERIENCE */}
+      <section id="experience" className="section">
+        <div className="container">
+          <motion.div
+            className="section-header"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <span className="section-tag">Experience</span>
+            <h2>Professional <span>Experience</span></h2>
+          </motion.div>
+
+          <div className="experience-list">
+            <div className="experience-item">
+              <div className="exp-meta">
+                <h3>Welldone Health</h3>
+                <span className="exp-date">Apr 2026 - Present</span>
+              </div>
+              <div className="exp-role">Software Developer Intern</div>
+              <p>Building and shipping features in a production React and Python Django codebase; involved in code reviews and bug fixes across the full stack.</p>
+            </div>
+
+            <div className="experience-item">
+              <div className="exp-meta">
+                <h3>AboutCode | Scancode Toolkit and Scancode.io</h3>
+                <span className="exp-date">Feb 2026 - Mar 2026</span>
+              </div>
+              <div className="exp-role">Open Source Contributor</div>
+              <p>Merged 15+ PRs into Scancode Toolkit, improving license rule accuracy, reducing false positives, and improving detection quality across real-world codebases.</p>
+            </div>
+
+            <div className="experience-item">
+              <div className="exp-meta">
+                <h3>HiperHealth</h3>
+                <span className="exp-date">Feb 2026 - Mar 2026</span>
+              </div>
+              <div className="exp-role">Open Source Contributor</div>
+              <p>Contributed PRs and filed reproducible bug reports to improve features, UI flows, and overall functionality across core and web platforms.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PROJECTS */}
       <section id="projects" className="section">
         <div className="container">
@@ -390,7 +434,7 @@ function App() {
                 Twitter
               </a>
             </div>
-            <a href="/Diksha Resume.pdf?v=20260325" target="_blank" rel="noreferrer" className="contact-resume-btn">
+            <a href="/Diksha%20Deware%20Resume.pdf" target="_blank" rel="noreferrer" className="contact-resume-btn">
               <span className="social-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
@@ -405,6 +449,9 @@ function App() {
           </motion.div>
         </div>
       </section>
+
+      {/* EXPERIENCE */}
+      
 
       {/* FOOTER */}
       <footer className="footer">
