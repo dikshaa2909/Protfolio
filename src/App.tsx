@@ -2,13 +2,29 @@ import { motion } from 'framer-motion';
 
 function App() {
   const skillsRow1 = ['Java', 'JavaScript', 'TypeScript', 'Python'];
-  const skillsRow2 = ['React.js', 'Next.js', 'Tailwind CSS', 'Redux', 'Framer Motion'];
+  const skillsRow2 = ['React.js', 'Next.js', 'Tailwind CSS', 'Redux', 'Framer Motion', 'Figma'];
   const skillsRow3 = ['Node.js', 'Express.js', 'MongoDB', 'Firebase', 'MySQL', 'Git', 'GitHub', 'VS Code', 'Vercel', 'Postman'];
 
   const projects = [
     {
+      title: 'OrbitWork',
+      desc: [
+        'Team management platform with workspaces, projects, tasks, Kanban, table, calendar views, and sprints.',
+        'Configurable role-based access with deny-by-default API permissions and Postgres Row Level Security.',
+        'Access requests, role-bound invite links, and a permission audit trail; team chat and WFH features in progress.',
+      ],
+      tags: ['Next.js', 'TypeScript', 'Supabase', 'Hono', 'Tailwind'],
+      bg: 'linear-gradient(135deg, rgba(255, 190, 137, 0.45) 0%, rgba(217, 120, 56, 0.32) 100%)',
+      github: 'https://github.com/dikshaa2909/OrbitWork',
+      demo: 'https://orbitwork11.vercel.app/',
+    },
+    {
       title: 'HireBuddy',
-      desc: 'Smart hiring and candidate management platform with role-based access and real-time workflows.',
+      desc: [
+        'Recruiter platform for applicant tracking, aptitude tests, and technical assessments.',
+        'Reduced manual evaluation steps and improved recruitment efficiency by approximately 40%.',
+        'Firebase authentication and real-time data with separate HR and student views, deployed on Vercel.',
+      ],
       tags: ['React.js', 'Node.js', 'Express.js', 'Firebase'],
       bg: 'linear-gradient(135deg, rgba(255, 161, 103, 0.45) 0%, rgba(217, 120, 56, 0.32) 100%)',
       github: 'https://github.com/dikshaa2909/HireBuddy',
@@ -16,27 +32,26 @@ function App() {
     },
     {
       title: 'FluxQ',
-      desc: 'Intelligent clinical queue optimization system with fairness-aware triage and predictive wait-time insights.',
-      tags: ['React', 'TypeScript', 'Node.js', 'Optimization'],
+      desc: [
+        'Patient triage system that prioritizes urgency and wait time with dynamic aging to prevent queue starvation.',
+        'Core engine published as the fluxq-engine NPM package.',
+        'REST API and real-time dashboard for wait-time estimates and doctor utilization tracking.',
+      ],
+      tags: ['React', 'Node.js', 'Express.js', 'MongoDB'],
       bg: 'linear-gradient(135deg, rgba(255, 178, 122, 0.42) 0%, rgba(217, 120, 56, 0.28) 100%)',
       github: 'https://github.com/dikshaa2909/FluxQ',
       demo: 'https://flux-q.vercel.app',
     },
     {
       title: 'CampusConnect',
-      desc: 'Role-based college management platform for attendance, announcements, academic records, and leave workflows.',
+      desc: [
+        'Role-based college management platform for attendance and announcements.',
+        'Academic records and leave workflows in one connected experience.',
+      ],
       tags: ['React.js', 'Firebase', 'Tailwind CSS'],
       bg: 'linear-gradient(135deg, rgba(255, 173, 114, 0.38) 0%, rgba(217, 120, 56, 0.24) 100%)',
       github: 'https://github.com/dikshaa2909/campus-connect',
       demo: 'https://github.com/dikshaa2909/campus-connect',
-    },
-    {
-      title: 'CivicFlow',
-      desc: 'Multilingual civic-tech reporting app with voice input, geolocation tagging, and real-time notifications.',
-      tags: ['React Native', 'Expo', 'NativeWind'],
-      bg: 'linear-gradient(135deg, rgba(255, 169, 110, 0.36) 0%, rgba(217, 120, 56, 0.22) 100%)',
-      github: 'https://github.com/dikshaa2909',
-      demo: null,
     },
   ];
 
@@ -87,6 +102,8 @@ function App() {
             <div className="nav-links">
               <a href="#about">About</a>
               <a href="#skills">Skills</a>
+              <a href="#design-work">Design</a>
+              <a href="#experience" className="nav-experience">Experience</a>
               <a href="#projects">Work</a>
               <a href="#contact" className="nav-cta">Say Hello</a>
             </div>
@@ -133,7 +150,7 @@ function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
             >
-              I'm a <strong>Frontend Developer</strong> trying to be a <strong>Full Stack Engineer</strong>.
+              I'm a <strong>Computer Science student</strong> passionate about <strong>development and design</strong>.
             </motion.p>
 
             <motion.div
@@ -149,7 +166,7 @@ function App() {
                 </svg>
               </a>
               <a href="#contact" className="btn-secondary">Let's Talk</a>
-              <a href="/Diksha%20Deware%20Resume.pdf" target="_blank" rel="noreferrer" className="btn-resume">Resume</a>
+              <a href="/Diksha%20Deware%20Resume%20(1).pdf" target="_blank" rel="noreferrer" className="btn-resume">Resume</a>
             </motion.div>
           </div>
 
@@ -226,14 +243,11 @@ function App() {
             >
               <div className="about-intro">
                 <p className="about-lead">
-                  I'm a Computer Science student with a passion for development and curious about all things code. I love learning new technologies
-                  and creating intuitive, beautiful user experiences.
+                  I'm a Computer Science student passionate about development and design. I enjoy turning ideas into thoughtful digital experiences that feel intuitive, useful, and beautiful.
                 </p>
                 <p className="about-description">
                   Currently on my journey to become a full-stack developer, I enjoy
-                  turning complex problems into simple, elegant solutions. I believe
-                  in clean code, continuous learning, and building applications that
-                  make a difference. I'm also a contributer to open-source and love contributing to projects that empower developers and communities.Currently I'm learning , Building and exploring new technologies.
+                  I’m building toward a full-stack career while growing as a designer, with a focus on clean code, accessible interfaces, and purposeful product experiences. I also contribute to open source and enjoy learning, designing, and building with new technologies.
                 </p>
               </div>
             </motion.div>
@@ -304,7 +318,7 @@ function App() {
             <div className="experience-item">
               <div className="exp-meta">
                 <h3>Welldone Health</h3>
-                <span className="exp-date">Apr 2026 - Present</span>
+                <span className="exp-date">May 2026 - Sep 2026</span>
               </div>
               <div className="exp-role">Software Developer Intern</div>
               <p>Building and shipping features in a production React and Python Django codebase; involved in code reviews and bug fixes across the full stack.</p>
@@ -316,7 +330,7 @@ function App() {
                 <span className="exp-date">Feb 2026 - Mar 2026</span>
               </div>
               <div className="exp-role">Open Source Contributor</div>
-              <p>Merged 15+ PRs into Scancode Toolkit, improving license rule accuracy, reducing false positives, and improving detection quality across real-world codebases.</p>
+              <p>Raised 15+ PRs into Scancode Toolkit, improving license rule accuracy, reducing false positives, and strengthening detection quality across real-world codebases.</p>
             </div>
 
             <div className="experience-item">
@@ -328,6 +342,69 @@ function App() {
               <p>Contributed PRs and filed reproducible bug reports to improve features, UI flows, and overall functionality across core and web platforms.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* DESIGN WORK */}
+      <section id="design-work" className="section section-cream design-work-section">
+        <div className="container">
+          <motion.div
+            className="section-header"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <span className="section-tag">Design Work</span>
+            <h2>Ideas shaped into <span>interfaces</span></h2>
+          </motion.div>
+          <motion.article
+            className="design-work-card"
+            initial={{ opacity: 0, y: 35 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="design-work-copy">
+              <span className="design-work-kicker">Featured product design</span>
+              <h3>OrbitWork</h3>
+              <p>
+                A collaborative workspace concept designed in Figma, with a focus on clear
+                workflows, calm visual hierarchy, and delightful interactions.
+              </p>
+              <div className="project-tags">
+                <span>Figma</span>
+                <span>UI/UX</span>
+                <span>Product Design</span>
+              </div>
+              <div className="design-work-actions">
+                <a
+                  href="https://www.figma.com/proto/hhr3VzKWZxvIZ3kohuPSFS/OrbitWork?node-id=12-545&p=f&t=ztBUCmQsLWC8pso6-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
+                  className="project-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Figma prototype
+                </a>
+                <a
+                  href="https://www.figma.com/design/hhr3VzKWZxvIZ3kohuPSFS/OrbitWork?m=auto&t=mrMaL9FvAHIzCMyB-1"
+                  className="project-link project-link-demo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Figma design
+                </a>
+              </div>
+            </div>
+            <div className="design-work-gallery" aria-label="OrbitWork design screens">
+              <figure>
+                <img src="/orbitwork-projects.png" alt="OrbitWork projects management landing screen" />
+                <figcaption>Projects management landing screen</figcaption>
+              </figure>
+              <figure>
+                <img src="/orbitwork-workspace.png" alt="OrbitWork workspace onboarding screen" />
+                <figcaption>Workspace onboarding flow</figcaption>
+              </figure>
+            </div>
+          </motion.article>
         </div>
       </section>
 
@@ -355,17 +432,21 @@ function App() {
               >
                 <div className="project-content">
                   <h3>{p.title}</h3>
-                  <p>{p.desc}</p>
+                  <ul className="project-description">
+                    {p.desc.map(point => <li key={point}>{point}</li>)}
+                  </ul>
                   <div className="project-tags">
                     {p.tags.map(t => <span key={t}>{t}</span>)}
                   </div>
                   <div className="project-links">
-                    <a href={p.github} className="project-link" target="_blank" rel="noreferrer">
-                      GitHub
-                    </a>
+                    {p.github && (
+                      <a href={p.github} className="project-link" target="_blank" rel="noreferrer">
+                        GitHub
+                      </a>
+                    )}
                     {p.demo && (
                       <a href={p.demo} className="project-link project-link-demo" target="_blank" rel="noreferrer">
-                        Demo
+                        Live
                       </a>
                     )}
                   </div>
@@ -387,7 +468,7 @@ function App() {
           >
             <span className="section-tag section-tag-light">Get In Touch</span>
             <h2>Let's work <span>together</span>.</h2>
-            <p className="contact-desc">I'm currently looking for internship opportunities. If you have a project in mind or an open position, I'd love to hear from you!</p>
+            <p className="contact-desc">I'm currently looking for development and design opportunities. If you have a project in mind or an open position, I'd love to hear from you!</p>
             <div className="contact-info">
               <div className="contact-email">
                 <span className="contact-icon" aria-hidden="true">
@@ -434,7 +515,7 @@ function App() {
                 Twitter
               </a>
             </div>
-            <a href="/Diksha%20Deware%20Resume.pdf" target="_blank" rel="noreferrer" className="contact-resume-btn">
+            <a href="/Diksha%20Deware%20Resume%20(1).pdf" target="_blank" rel="noreferrer" className="contact-resume-btn">
               <span className="social-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
